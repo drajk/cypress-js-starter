@@ -1,10 +1,10 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   chromeWebSecurity: false,
-  fixturesFolder: 'cypress/fixtures',
-  screenshotsFolder: 'cypress/screenshots',
-  videosFolder: 'cypress/videos',
+  fixturesFolder: "cypress/fixtures",
+  screenshotsFolder: "cypress/screenshots",
+  videosFolder: "cypress/videos",
   e2e: {
     setupNodeEvents(on, config) {
       /* 
@@ -15,6 +15,6 @@ module.exports = defineConfig({
       */
       // return require('cypress/plugins/index.js')(on, config)
     },
-    baseUrl: 'https://the-internet.herokuapp.com/',
+    baseUrl: "https://the-internet.herokuapp.com/",
   },
-})
+});
